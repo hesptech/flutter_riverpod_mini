@@ -16,7 +16,7 @@ GoRouter appRouter(Ref ref) {
       path: '/provider',
       builder: (context, state) => const ProviderScreen(),
     ),
-    /* GoRoute(
+    GoRoute(
       path: '/provider-router',
       builder: (context, state) => const RouterScreen(),
     ),
@@ -24,7 +24,7 @@ GoRouter appRouter(Ref ref) {
       path: '/state-provider',
       builder: (context, state) => const StateProviderScreen(),
     ),
-    GoRoute(
+    /* GoRoute(
       path: '/todo',
       builder: (context, state) => const TodoScreen(),
     ),

@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod_annotations/config/config.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'presentation/providers/providers.dart';
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void main() => runApp(const ProviderScope(child: MyApp()));
+
+class MyApp extends ConsumerWidget {
+  const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+  Widget build(BuildContext context, WidgetRef ref) {
+    final appRouter = ref.watch(appRouterProvider);
+    final isDarkmode = ref.watch(darkModeProvider);
+
+    return MaterialApp.router(
+      title: 'Riverpod Providers',
+      debugShowCheckedModeBanner: false,
+      routerConfig: appRouter,
+      theme: AppTheme(isDarkmode: isDarkmode).getTheme(),
     );
   }
 }

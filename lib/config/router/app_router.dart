@@ -24,7 +24,7 @@ GoRouter appRouter(Ref ref) {
       path: '/state-provider',
       builder: (context, state) => const StateProviderScreen(),
     ),
-    /* GoRoute(
+    GoRoute(
       path: '/todo',
       builder: (context, state) => const TodoScreen(),
     ),
@@ -40,7 +40,7 @@ GoRouter appRouter(Ref ref) {
       path: '/stream-provider',
       builder: (context, state) => const StreamProviderScreen(),
     ),
-    GoRoute(
+    /* GoRoute(
       path: '/change-notifier-provider',
       builder: (context, state) => const ChangeNotifierScreen(),
     ),

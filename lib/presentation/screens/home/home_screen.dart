@@ -23,7 +23,7 @@ class _HomeScreenView extends StatelessWidget {
     return ListView(
       children: const [
         _CustomListTile(
-            title: 'Provider Simple',
+            title: 'Provider Simple(nome)',
             subTitle: 'Un provider de sólo lectura',
             location: '/provider'),
         _CustomListTile(
@@ -32,18 +32,18 @@ class _HomeScreenView extends StatelessWidget {
             location: '/provider-router'),
         _CustomListTile(
             title: 'State Provider',
-            subTitle: 'Un estado para almacenar un objeto',
+            subTitle: 'Un estado para almacenar un objeto(theme-name generator-counter)',
             location: '/state-provider'),
         _CustomListTile(
-            title: 'State Provider + Provider',
+            title: 'State Provider + Provider(lista Invitatos)',
             subTitle: 'TODO - Una mezcla entre providers',
             location: '/todo'),
         _CustomListTile(
-            title: 'Future Provider',
+            title: 'Future Provider (nombres Pokemon)',
             subTitle: 'Mantener el estado de un future y su retorno',
             location: '/future-provider'),
         _CustomListTile(
-            title: 'Family Future Provider',
+            title: 'Family Future Provider(keepAlive-argument)',
             subTitle: 'Providers con argumentos',
             location: '/future-family-provider'),
         _CustomListTile(

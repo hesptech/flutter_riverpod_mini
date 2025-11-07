@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:go_router/go_router.dart';
+
 import 'package:flutter_riverpod_annotations/presentation/screens/screens.dart';
 
 part 'app_router.g.dart';
@@ -10,6 +11,20 @@ GoRouter appRouter(Ref ref) {
   return GoRouter(routes: [
     GoRoute(
       path: '/',
+      builder: (context, state) => const HomeMainScreen(),
+    ),
+
+    GoRoute(
+      path: '/simple-home-riverpod',
+      builder: (context, state) => const RiverpodHomeScreen(),
+    ),
+    GoRoute(
+      path: '/simple-riverpod-provider',
+      builder: (context, state) => const RiverpodProviderScreen(),
+    ),
+
+    GoRoute(
+      path: '/home-riverpod',
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(

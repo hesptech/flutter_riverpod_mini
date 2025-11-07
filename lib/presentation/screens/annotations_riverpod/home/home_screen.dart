@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Riverpod Providers'),
+        title: const Text('Annotations Riverpod Providers'),
       ),
       body: const _HomeScreenView(),
     );
@@ -50,14 +50,14 @@ class _HomeScreenView extends StatelessWidget {
             title: 'Stream Provider',
             subTitle: 'Mantener el estado de un Stream y sus emosiones',
             location: '/stream-provider'),
-        _CustomListTile(
+        /* _CustomListTile(
             title: 'State Notifier Provider',
             subTitle: 'Provider con notificación automática',
             location: '/state-notifier-provider'),
         _CustomListTile(
             title: 'Change Notifier Provider',
             subTitle: 'Provider con control de notificación a listeners',
-            location: '/change-notifier-provider'),
+            location: '/change-notifier-provider'), */
       ],
     );
   }

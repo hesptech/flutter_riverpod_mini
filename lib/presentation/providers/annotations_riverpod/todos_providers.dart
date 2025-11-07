@@ -3,7 +3,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:flutter_riverpod_annotations/config/config.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../domain/domain.dart';
+import '../../../domain/domain.dart';
 
 part 'todos_providers.g.dart';
 

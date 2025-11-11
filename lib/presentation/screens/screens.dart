@@ -1,9 +1,9 @@
-export 'home_main_screen.dart';
+export 'home_screen.dart';
 
-export 'simple_riverpod/riverpod_home/riverpod_home_screen.dart';
+export 'simple_riverpod/simple_home/simple_home_screen.dart';
 export 'simple_riverpod/01_simple_provider/riverpod_provider_screen.dart';
 
-export 'annotations_riverpod/home/home_screen.dart';
+export 'annotations_riverpod/annotations_home/annotations_home_screen.dart';
 export 'annotations_riverpod/01_provider/provider_screen.dart';
 export 'annotations_riverpod/02_provider_router/router_screen.dart';
 export 'annotations_riverpod/03_state_provider/state_provider_screen.dart';

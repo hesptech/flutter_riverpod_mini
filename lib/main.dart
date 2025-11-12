@@ -4,7 +4,11 @@ import 'package:flutter_riverpod_annotations/config/config.dart';
 
 import 'presentation/providers/providers.dart';
 
-void main() => runApp(const ProviderScope(child: MyApp()));
+//void main() => runApp(const ProviderScope(child: MyApp()));
+
+void runMainApp() {
+  runApp(ProviderScope(child: MyApp()));  
+}
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});

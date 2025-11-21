@@ -1,6 +1,17 @@
-# flutter_riverpod_annotations
+To start running the App......
 
-A new Flutter project.
+Run commands like:
+flutter run --flavor dev -t lib/main_dev.dart
+flutter build ios --flavor prod -t lib/main_prod.dart
+
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
 
 -----------------------
 https://cursos.devtalles.com - Mini-Curso: Riverpod providers con anotaciones
@@ -26,10 +37,6 @@ lib/
  └── config/
       └── environment.dart
 
-Run commands like:
-flutter run --flavor dev -t lib/main_dev.dart
-flutter build ios --flavor prod -t lib/main_prod.dart
-
 ------------------------
 
 ios
@@ -39,3 +46,9 @@ https://medium.com/@ahmedawwan/flutter-flavors-tutorial-setup-dev-staging-and-pr
 
 https://github.com/ahmedawwan/flutter_flavors_example?source=post_page-----f5937a7f9352---------------------------------------
 
+
+------------------------
+
+Flutter. The Counter Example With Proper Architecture
+MVVM - ChangeNotifier
+https://medium.com/easy-flutter/flutter-the-counter-example-with-proper-architecture-11add4660889

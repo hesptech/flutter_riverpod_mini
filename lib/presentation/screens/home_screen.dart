@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
 class HomeMainScreen extends StatelessWidget {
   const HomeMainScreen({super.key});
 
@@ -16,7 +15,6 @@ class HomeMainScreen extends StatelessWidget {
   }
 }
 
-
 class _HomeMainScreenView extends StatelessWidget {
   const _HomeMainScreenView();
 
@@ -26,17 +24,16 @@ class _HomeMainScreenView extends StatelessWidget {
       children: const [
         _CustomListTile(
             title: 'Riverpod Simple',
-            subTitle: '',
+            subTitle: 'vers. 2.0',
             location: '/simple-home-riverpod'),
         _CustomListTile(
             title: 'Riverpod Annotations',
             subTitle: 'vers. 3.0',
             location: '/home-riverpod'),
-        /* _CustomListTile(
-            title: 'State Provider',
-            subTitle: 'Un estado para almacenar un objeto(theme-name generator-counter)',
-            location: '/state-provider'), */
-
+        _CustomListTile(
+            title: 'Counter Change Notifier',
+            subTitle: 'MVVM Pattern',
+            location: '/counter-change-notifier'),
       ],
     );
   }

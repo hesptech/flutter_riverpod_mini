@@ -13,7 +13,6 @@ GoRouter appRouter(Ref ref) {
       path: '/',
       builder: (context, state) => const HomeMainScreen(),
     ),
-
     GoRoute(
       path: '/simple-home-riverpod',
       builder: (context, state) => const RiverpodHomeScreen(),
@@ -22,7 +21,10 @@ GoRouter appRouter(Ref ref) {
       path: '/simple-riverpod-provider',
       builder: (context, state) => const RiverpodProviderScreen(),
     ),
-
+    GoRoute(
+      path: '/counter-change-notifier',
+      builder: (context, state) => CounterView(),
+    ),
     GoRoute(
       path: '/home-riverpod',
       builder: (context, state) => const HomeScreen(),
